@@ -81,8 +81,8 @@ int main() {
             // x min -2.5, max 1.0
             // y min -1.0, max 1.0
 
-            float x0 = (sx / (float)MAX_X * 0.36458333) - 1.58854166667;
-            float y0 = ((sy / (float)MAX_Y) * 0.234375) - 0.21875;
+            float x0 = (sx / (float)MAX_X * 3) - 2;
+            float y0 = (sy / (float)MAX_Y * 2.0) - 1.0;
            
             int i = 0;
             while(((x*x - y*y) < (2*2)) && i < MAX_I) {

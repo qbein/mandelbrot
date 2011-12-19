@@ -4,10 +4,9 @@ build:
 	gcc -o mandelbrot mandelbrot.c
 
 test: build
-	./mandelbrot > mandelbrot.ppm
+	./mandelbrot 800 600 1000 > mandelbrot.ppm
 	convert mandelbrot.ppm mandelbrot.png
 	open mandelbrot.png
-	rm mandelbrot.ppm
 
 clean:
-	rm mandelbrot
+	rm mandelbrot mandelbrot.ppm
